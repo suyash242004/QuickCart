@@ -15,7 +15,7 @@ export async function GET(request) {
       return NextResponse.json({ success: false, message: "not authorized" });
     }
 
-    await ConnectDB;
+    await ConnectDB();
 
     Address.length;
 
